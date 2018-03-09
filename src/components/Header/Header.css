@@ -1,0 +1,11 @@
+.Header-container{
+    display:flex;
+    justify-content: space-between;
+    padding:3vh;
+    margin:0;
+    box-sizing: border-box;
+    background-color:black;
+    color:white;
+    font-size: 2em;
+    width:auto;
+}

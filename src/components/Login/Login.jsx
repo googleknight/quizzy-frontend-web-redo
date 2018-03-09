@@ -24,15 +24,23 @@ class Login extends Component {
         <div className="Login-body">
           <div className="Login-box">
             <div className="Login-box-left">
-              <p>Welcome</p>
-              <p>to</p>
-              <p>Quizzy!</p>
+              <p className="Login-box-left-text-black">Welcome</p>
+              <p className="Login-box-left-text-black">to</p>
+              <p className="Login-box-left-text-white">Quizzy!</p>
             </div>
             <div className="Login-box-right">
-              <p> Login</p>
-              <p>Username</p>
-              <input type="text" className="Login-box-right-textbox" onChange={this.onTextChange} />
-              <Button onClick={() => this.props.callBackfromApp(this.state.username)} value="Login" />
+              <p className="Login-box-right-text-Login"> Login</p>
+              <p className="Login-box-right-text-Username">Username</p>
+              <input
+                type="text"
+                className="Login-box-right-textbox"
+                onChange={this.onTextChange}
+              />
+              <Button
+                className="Login-box-right-button"
+                onClick={() => this.props.callBackfromApp(this.state.username)}
+                value="Login"
+              />
             </div>
           </div>
         </div>

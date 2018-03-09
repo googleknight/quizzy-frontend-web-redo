@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import './Header.css';
 
 const Header = props => (
@@ -8,5 +8,10 @@ const Header = props => (
     <p className="Header-username">{props.username}</p>
   </div>
 );
-
+Header.propTypes = {
+  username: PropTypes.string,
+};
+Header.defaultProps = {
+  username: '',
+};
 export default Header;
