@@ -12,17 +12,22 @@ class App extends Component {
       data: [],
     };
   }
+  handleLogin=(username) => {
+    console.log(username);
+  }
   render() {
     let page;
     if (this.state.currentPage === 'Login') {
-      page = <Login />;
+      page = <Login callBackfromApp={this.handleLogin} />;
     } else if (this.state.currentPage === 'QuizPage') {
       page = <QuizPage />;
     } else if (this.state.currentPage === 'ScoreBoard') {
       page = <ScoreBoard />;
     }
     return (
-      <div className="App" />
+      <div className="App">
+        {page}
+      </div>
     );
   }
 }
